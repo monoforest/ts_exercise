@@ -1,15 +1,18 @@
+import { delayMs, wait } from "./util";
+
 
 console.log('hello');
 
-let Jetty = require('jetty');
-let jetty = new Jetty(process.stdout);
+const fpsMs = 1000.0 / 24;
 
-jetty.clear();
+async function main() {
+    while( true ) {
+        console.clear();
 
-let y = 3;
-let x = 2;
-let isBg = true;
+        let curTime = (new Date()).getMilliseconds().toFixed(1);
+        console.log( Math.round(1000.0 / fpsMs), 'fps, ', curTime  );
+        await delayMs( fpsMs );
+    }
+}
 
-jetty.rgb(100, isBg).moveTo([y, x]).text("HELLO WORLD");
-
-jetty.text('\n');
+main();
