@@ -4,7 +4,15 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "tsc && node ./dist/index.js"
+    "start": "tsc && node ./dist/index.js",
+    "ex2-exam1": "tsc && node ./dist/ex2/exam1.js",
+    "ex2-exam1-ani": "tsc && node ./dist/ex2/exam1_ani.js",
+    "ex2-exam2": "tsc && node ./dist/ex2/exam2.js",
+    "ex2-exam3": "tsc && node ./dist/ex2/exam3.js",
+
+    "ex3-exam1": "tsc && node ./dist/ex3/exam1.js",
+    "ex3-exam2": "tsc && node ./dist/ex3/exam2.js",
+    "ex3-exam3": "tsc && node ./dist/ex3/exam3.js"
   },
   "author": "",
   "license": "ISC",
